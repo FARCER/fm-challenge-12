@@ -1,0 +1,26 @@
+extends ../layouts/main
+
+block variables
+  -var title = 'Главная страница'
+
+
+block content
+  img(src="static/img/common/logo.svg").logo
+  .form
+    .title
+      span.title__color Publish your podcasts
+      span everywhere.
+    p Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
+    form
+      input(placeholder="Email address" type="text")
+      label.error-text Oops! Please check your email
+      button(type="submit") Request Access
+    ul.logos
+      li
+        img(src="static/img/common/spotify.svg")
+      li
+        img(src="static/img/common/apple-podcast.svg")
+      li
+        img(src="static/img/common/google-podcasts.svg")
+      li
+        img(src="static/img/common/pocket-casts.svg")
